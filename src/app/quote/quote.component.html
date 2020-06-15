@@ -15,6 +15,7 @@
           <button type="button" class="btn btn-secondary btn-lg delete_btn" (click)= 'quoteDelete(true)'>Delete</button>
         </div>
         <div class="col-8">
+          <!--app-vote></app-vote-->
           <div class="vote_btns">
             <div class="like_gp">
                 <button type="button" class="btn btn-warning btn-sm up_vote" (click)="likeButtonClick(i)">Like</button>
@@ -30,6 +31,6 @@
 
       <div class="row">
         <div class="col-12">
-          <p>{{quote.timing | dateAgo}}</p>
+          <p>{{quote.timing | dateCount}}</p>
         </div>
       </div>
